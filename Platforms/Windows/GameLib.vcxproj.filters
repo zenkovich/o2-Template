@@ -1,17 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <Filter Include="Sources\Game" />
-    <Filter Include="Sources" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Sources\Game\TestApplication.h">
-      <Filter>Sources\Game</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Sources\Game\TestApplication.cpp">
-      <Filter>Sources\Game</Filter>
-    </ClCompile>
-  </ItemGroup>
+	<ItemGroup>
+		<Filter Include="Sources\Game" />
+		<Filter Include="Sources" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\Sources\Game\AppDelegate.h">
+			<Filter>Sources\Game</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\Sources\Game\HelloWorldScene.h">
+			<Filter>Sources\Game</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\Sources\Game\TestApplication.h">
+			<Filter>Sources\Game</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\Sources\Game\AppDelegate.cpp">
+			<Filter>Sources\Game</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\Sources\Game\HelloWorldScene.cpp">
+			<Filter>Sources\Game</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\Sources\Game\TestApplication.cpp">
+			<Filter>Sources\Game</Filter>
+		</ClCompile>
+	</ItemGroup>
 </Project>

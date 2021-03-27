@@ -18,14 +18,14 @@
     <ProjectGuid>{F0C3F9F6-349D-4D58-9175-0AE646039318}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>PetStory</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
     <ProjectName>GameLib</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FastDebug|x64'" Label="Configuration">
@@ -83,8 +83,8 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level2</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;PLATFORM_WINDOWS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\o2\Framework;$(ProjectDir)..\..\o2\Framework\3rdPartyLibs\FreeType\include;$(ProjectDir)..\..\o2\Framework\Sources;$(ProjectDir)..\..\Sources\Game;$(SolutionDir)..\..\o2\Framework\3rdPartyLibs;$(ProjectDir)..\..\o2\Framework\3rdPartyLibs\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;PLATFORM_WINDOWS;_DEBUG;_CONSOLE;_WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\o2\Framework;$(ProjectDir)..\..\o2\Framework\3rdPartyLibs\FreeType\include;$(ProjectDir)..\..\o2\Framework\Sources;$(ProjectDir)..\..\Sources\Game;$(SolutionDir)..\..\o2\Framework\3rdPartyLibs;$(ProjectDir)..\..\o2\Framework\3rdPartyLibs\rapidjson\include;C:\work\o2-Template\cocos2d\templates\cpp-template-default\Classes;C:\work\o2-Template\cocos2d\cocos\audio\include;C:\work\o2-Template\cocos2d;C:\work\o2-Template\cocos2d\cocos;C:\work\o2-Template\cocos2d\extensions;C:\work\o2-Template\cocos2d\cocos\platform;C:\work\o2-Template\cocos2d\cocos\editor-support;C:\work\o2-Template\cocos2d\cocos\base;C:\work\o2-Template\cocos2d\cocos\platform\win32;C:\work\o2-Template\cocos2d\external\recast\..;C:\work\o2-Template\cocos2d\external\tinyxml2\.;C:\work\o2-Template\cocos2d\external\xxhash\.;C:\work\o2-Template\cocos2d\external\xxtea\.;C:\work\o2-Template\cocos2d\external\clipper\.;C:\work\o2-Template\cocos2d\external\edtaa3func\.;C:\work\o2-Template\cocos2d\external\ConvertUTF\.;C:\work\o2-Template\cocos2d\external\poly2tri\..;C:\work\o2-Template\cocos2d\external\md5\..;C:\work\o2-Template\cocos2d\external\unzip\.;C:\work\o2-Template\cocos2d\external\Box2D\include;C:\work\o2-Template\cocos2d\external\chipmunk\include;C:\work\o2-Template\cocos2d\external\freetype2\include\win32\freetype2;C:\work\o2-Template\cocos2d\external\bullet\include;C:\work\o2-Template\cocos2d\external\bullet\include\bullet;C:\work\o2-Template\cocos2d\external\jpeg\include\win32;C:\work\o2-Template\cocos2d\external\openssl\include\win32;C:\work\o2-Template\cocos2d\external\uv\include;C:\work\o2-Template\cocos2d\external\webp\include\win32;C:\work\o2-Template\cocos2d\external\websockets\include\win32;C:\work\o2-Template\cocos2d\external\curl\include\win32;C:\work\o2-Template\cocos2d\external\png\include\win32;C:\work\o2-Template\cocos2d\external\win32-specific\gles\include\OGLES;C:\work\o2-Template\cocos2d\external\win32-specific\icon\include;C:\work\o2-Template\cocos2d\external\win32-specific\MP3Decoder\include;C:\work\o2-Template\cocos2d\external\win32-specific\OggDecoder\include;C:\work\o2-Template\cocos2d\external\win32-specific\OpenalSoft\include;C:\work\o2-Template\cocos2d\external\glfw3\include\win32;C:\work\o2-Template\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <SDLCheck>true</SDLCheck>
@@ -163,9 +163,13 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
   <ItemGroup>
+    <ClInclude Include="..\..\Sources\Game\AppDelegate.h" />
+    <ClInclude Include="..\..\Sources\Game\HelloWorldScene.h" />
     <ClInclude Include="..\..\Sources\Game\TestApplication.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Sources\Game\AppDelegate.cpp" />
+    <ClCompile Include="..\..\Sources\Game\HelloWorldScene.cpp" />
     <ClCompile Include="..\..\Sources\Game\TestApplication.cpp" />
   </ItemGroup>
 </Project>

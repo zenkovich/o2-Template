@@ -1,5 +1,6 @@
 #pragma once
 
+#include "AppDelegate.h"
 #include "o2/Application/Application.h"
 
 using namespace o2;
@@ -15,4 +16,6 @@ protected:
 
 	// Called on drawing
 	void OnDraw();
+
+	AppDelegate cocosApp;
 };

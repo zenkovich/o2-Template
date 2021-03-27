@@ -5,6 +5,7 @@
 
 void TestApplication::OnStarted()
 {
+	cocos2d::Application::getInstance()->initGLContextAttrs();
 }
 
 void TestApplication::OnUpdate(float dt)
